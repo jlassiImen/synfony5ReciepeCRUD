@@ -1,6 +1,8 @@
 #synfony5ReciepeCRUD
 A reciepe CRUD example with Synfony 5
 
+
+
 Setup project
 - Composer
     composer install
@@ -10,6 +12,7 @@ Setup project
     phph bin/console doctrine:migrations:migrate
 - load fixtures
     php bin/console doctrine:fixtures:load
+- Start server: symfony server:start
     
 Available Api:
 -Add reciepe : 
@@ -21,10 +24,12 @@ Available Api:
   "soustitre" : "BASIC FRENCH OMELET RECIPE",
   "ingredients" : ["2	large EGGS","2 Tbsp water","1/8 tsp salt"]
   }
-  
+ 
+ 
 -Search all reciepes Api:
   -path :/recette/searchAll
   -Methode : GET
+
 
 -Search reciepe by Id Api:
   -path :/recette/searchById/id
@@ -39,7 +44,9 @@ Available Api:
   "soustitre" : "BASIC FRENCH OMELET RECIPE",
   "ingredients" : ["4	large EGGS","4 Tbsp water","1/4 tsp salt"]
   }
-  
+ 
+ 
+ 
 -Remove reciepe : 
   -path :/recette/remove/id
   -Methode : DELETE
